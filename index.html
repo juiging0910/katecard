@@ -3,67 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JillChu｜朱錦榕 專業名片 V1</title>
+    <title>Kate Hsu｜徐凱特 專業名片 V1</title>
     <script charset="utf-8" src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
 </head>
 <body>
     <script>
-        const JILL_DATA = {
+        const Kate_DATA = {
             LIFF_ID: "2010214408-WzBBqMsZ",
-            BASE_URL: "https://joannahsu0327-maker.github.io/JILL-card/",
-            IMG_MAIN: "JILL_IMAGE.jpg",
+            BASE_URL: "https://joannahsu0327-maker.github.io/Kate-card/",
+            IMG_MAIN: "katecardpic.jpg",
             IMG_INTRO: "CLO_IMAGE.jpg",
-            name: "JillChu｜朱錦榕",
-            title: "服裝版型設計 | 客製化服飾",
-            intro: "把你的品牌靈魂，\n落實在每一件服裝上",
-            feature_Title: "服務項目", 
+            name: "Kate Hsu｜徐睿君",
+            title: "財務架構師 | 客製化理財",
+            intro: "財務不是冰冷的數字\n而是人生的選擇權",
+            feature_Title: "核心服務項目", 
             item1: "📐 服裝版型開發",
             item2: "👗 服裝品牌輔導",
             item3: "✂️ 客製訂製",
             item4: "🏭 教學講座",
             item5: "🎭 表演服裝設計",
-            url_Booking: "https://line.me/ti/p/Lql9srvBrq",
-            url_LINKTREE: "https://linktr.ee/jillchu",
-            url_Tiktok: "https://www.tiktok.com/@jillchu0622",
-            phone: "0916760451"
+            url_Booking: "https://line.me/ti/p/Bfx9CxDDQE",
+            url_LINKTREE: "https://www.instagram.com/katehsu0910",
+            url_Tiktok: "https://www.facebook.com/kate.hsu0910",
+            phone: "0901327823"
         };
 
         async function main() {
             try {
-                await liff.init({ liffId: JILL_DATA.LIFF_ID });
+                await liff.init({ liffId: Kate_DATA.LIFF_ID });
                 if (!liff.isLoggedIn()) { liff.login(); return; }
                 
                 const ts = "?t=" + Date.now();
                 const res = await liff.shareTargetPicker([{
                     "type": "flex", 
-                    "altText": "您好，這是 " + JILL_DATA.name + " 的專業名片",
+                    "altText": "您好，這是 " + Kate_DATA.name + " 的專業名片",
                     "contents": {
                         "type": "carousel",
                         "contents": [
                             { 
                                 "type": "bubble", 
-                                "hero": { "type": "image", "url": JILL_DATA.BASE_URL + JILL_DATA.IMG_MAIN + ts, "size": "full", "aspectRatio": "3:4", "aspectMode": "cover" }, 
+                                "hero": { "type": "image", "url": Kate_DATA.BASE_URL + Kate_DATA.IMG_MAIN + ts, "size": "full", "aspectRatio": "3:4", "aspectMode": "cover" }, 
                                 "body": { "type": "box", "layout": "vertical", "contents": [ 
-                                    { "type": "text", "text": JILL_DATA.name, "weight": "bold", "size": "xl" }, 
-                                    { "type": "text", "text": JILL_DATA.title, "size": "sm", "color": "#fb966e", "weight": "bold" } 
+                                    { "type": "text", "text": Kate_DATA.name, "weight": "bold", "size": "xl" }, 
+                                    { "type": "text", "text": Kate_DATA.title, "size": "sm", "color": "#fb966e", "weight": "bold" } 
                                 ] } 
                             },
                             { 
                                 "type": "bubble", 
-                                "hero": { "type": "image", "url": JILL_DATA.BASE_URL + JILL_DATA.IMG_INTRO + ts, "size": "full", "aspectRatio": "20:13", "aspectMode": "cover" }, 
+                                "hero": { "type": "image", "url": Kate_DATA.BASE_URL + Kate_DATA.IMG_INTRO + ts, "size": "full", "aspectRatio": "20:13", "aspectMode": "cover" }, 
                                 "body": { "type": "box", "layout": "vertical", "spacing": "lg", "contents": [
-                                    { "type": "text", "text": JILL_DATA.intro, "size": "xs", "color": "#888888", "wrap": true },
-                                    { "type": "text", "text": JILL_DATA.feature_Title, "weight": "bold", "size": "lg", "color": "#fb966e" },
+                                    { "type": "text", "text": Kate_DATA.intro, "size": "xs", "color": "#888888", "wrap": true },
+                                    { "type": "text", "text": Kate_DATA.feature_Title, "weight": "bold", "size": "lg", "color": "#fb966e" },
                                     { "type": "box", "layout": "vertical", "spacing": "sm", "contents": [
-                                        { "type": "text", "text": JILL_DATA.item1, "size": "md", "weight": "bold" },
-                                        { "type": "text", "text": JILL_DATA.item2, "size": "md", "weight": "bold" },
-                                        { "type": "text", "text": JILL_DATA.item3, "size": "md", "weight": "bold" },
-                                        { "type": "text", "text": JILL_DATA.item4, "size": "md", "weight": "bold" },
-                                        { "type": "text", "text": JILL_DATA.item5, "size": "md", "weight": "bold" }
+                                        { "type": "text", "text": Kate_DATA.item1, "size": "md", "weight": "bold" },
+                                        { "type": "text", "text": Kate_DATA.item2, "size": "md", "weight": "bold" },
+                                        { "type": "text", "text": Kate_DATA.item3, "size": "md", "weight": "bold" },
+                                        { "type": "text", "text": Kate_DATA.item4, "size": "md", "weight": "bold" },
+                                        { "type": "text", "text": Kate_DATA.item5, "size": "md", "weight": "bold" }
                                     ]}
                                 ]},
                                 "footer": { "type": "box", "layout": "vertical", "contents": [ 
-                                    { "type": "button", "style": "primary", "color": "#fb966e", "action": { "type": "uri", "label": "預約諮詢", "uri": JILL_DATA.url_Booking } } 
+                                    { "type": "button", "style": "primary", "color": "#fb966e", "action": { "type": "uri", "label": "預約諮詢", "uri": Kate_DATA.url_Booking } } 
                                 ] }
                             },
                             { 
@@ -71,11 +71,11 @@
                                 "body": { "type": "box", "layout": "vertical", "spacing": "md", "contents": [
                                     { "type": "text", "text": "與我聯繫", "weight": "bold", "size": "lg" }, { "type": "separator" },
                                     { "type": "box", "layout": "vertical", "spacing": "sm", "contents": [
-                                        { "type": "button", "style": "primary", "color": "#fb966e", "action": { "type": "uri", "label": "撥打電話", "uri": "tel:" + JILL_DATA.phone } },
-                                        { "type": "button", "style": "secondary", "color": "#EEEEEE", "action": { "type": "uri", "label": "加 LINE 好友", "uri": JILL_DATA.url_Booking } },
-                                        { "type": "button", "style": "secondary", "color": "#FEE8F0", "action": { "type": "uri", "label": "Linktree", "uri": JILL_DATA.url_LINKTREE } },
-                                        { "type": "button", "style": "secondary", "color": "#E8F0FE", "action": { "type": "uri", "label": "TikTok", "uri": JILL_DATA.url_Tiktok } },
-                                        { "type": "button", "style": "link", "height": "sm", "action": { "type": "uri", "label": "📤 分享名片", "uri": "line://app/" + JILL_DATA.LIFF_ID } }
+                                        { "type": "button", "style": "primary", "color": "#fb966e", "action": { "type": "uri", "label": "撥打電話", "uri": "tel:" + Kate_DATA.phone } },
+                                        { "type": "button", "style": "secondary", "color": "#EEEEEE", "action": { "type": "uri", "label": "加 LINE 好友", "uri": Kate_DATA.url_Booking } },
+                                        { "type": "button", "style": "secondary", "color": "#FEE8F0", "action": { "type": "uri", "label": "Linktree", "uri": Kate_DATA.url_LINKTREE } },
+                                        { "type": "button", "style": "secondary", "color": "#E8F0FE", "action": { "type": "uri", "label": "TikTok", "uri": Kate_DATA.url_Tiktok } },
+                                        { "type": "button", "style": "link", "height": "sm", "action": { "type": "uri", "label": "📤 分享名片", "uri": "line://app/" + Kate_DATA.LIFF_ID } }
                                     ]}
                                 ]}
                             }
